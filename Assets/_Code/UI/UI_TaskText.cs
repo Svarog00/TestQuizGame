@@ -13,12 +13,7 @@ public class UI_TaskText : MonoBehaviour
     private void Awake()
     {
         _text.CrossFadeAlpha(0, 0f, false);
-    }
-
-    private void Start()
-    {
         _taskManager.NewTaskGenerated += UpdateText;
-
     }
 
     private void UpdateText(string answer)

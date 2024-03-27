@@ -3,6 +3,7 @@ using Data;
 using Animation;
 using System.Collections.Generic;
 using Assets._Code.Particles;
+using System;
 
 namespace Grid
 {
@@ -59,6 +60,17 @@ namespace Grid
                 for (int j = 0; j < _grid.Height; j++)
                 {
                     _grid.GetGridObject(i, j).SetActive(active);
+                }
+            }
+        }
+
+        public void PlayStartAnimation()
+        {
+            for (int i = 0; i < _grid.Width; i++)
+            {
+                for (int j = 0; j < _grid.Height; j++)
+                {
+                    _grid.GetGridObject(i, j).PlayStartAnimation();
                 }
             }
         }
