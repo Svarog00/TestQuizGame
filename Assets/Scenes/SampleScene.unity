@@ -1270,6 +1270,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7654930933594919652, guid: 869a6bf169524834680bf441f1c6083d, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 1258109803}
+    - target: {fileID: 7654930933594919652, guid: 869a6bf169524834680bf441f1c6083d, type: 3}
       propertyPath: _taskManager
       value: 
       objectReference: {fileID: 460556355}

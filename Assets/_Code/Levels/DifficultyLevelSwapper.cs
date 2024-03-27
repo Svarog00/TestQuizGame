@@ -11,7 +11,10 @@ namespace Levels
         public Action OnFinalLevelReached;
 
         [SerializeField] private LevelData[] _levelDatas;
+
         [SerializeField] private GridGenerator _gridGenerator;
+        [SerializeField] private GridView _view;
+
         [SerializeField] private TaskManager _taskManager;
 
         private LevelData _currentLevel;
@@ -47,6 +50,7 @@ namespace Levels
             _currentLevelIndex = 0;
 
             _gridGenerator.GenerateGrid(_currentLevel.Columns, _currentLevel.Rows, _currentLevel.CardBundle);
+            _view.PlayStartAnimation();
             _taskManager.GenerateNewTask();
         }
     }

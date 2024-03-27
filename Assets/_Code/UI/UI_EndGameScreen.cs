@@ -51,7 +51,6 @@ public class UI_EndGameScreen : MonoBehaviour
         _replayButton.SetActive(false);
 
         _levelsController.StartGame();
-        //_gridView.PlayStartAnimation();
     }
 
     private void FadeElement(Graphic target, float alpha, float duration)

@@ -25,7 +25,7 @@ namespace Grid
         private const float TargetScale = 1f;
         private const float AnimationDuration = 0.5f;
         
-        private const float WiggleEndPosition = 1f;
+        private const float WiggleEndPosition = 0.2f;
 
         private const int SpriteRotationAngle = -90;
 
@@ -71,7 +71,7 @@ namespace Grid
 
         public void PlayStartAnimation()
         {
-            //_tweenAnimator.BounseInOut(_spriteRenderer.transform, TargetScale, AnimationDuration);
+            _tweenAnimator.BounseInOut(_spriteRenderer.transform, TargetScale, AnimationDuration);
         }
 
         private void OnDestroy()
